@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "c612fe11-b627-4838-a0c9-22fe877e5bcd",
+		"name": "INFUSE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "422198"
+	},
+	"item": [
+		{
+			"name": "Json",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/wagner/work/desenv/TESTE/pedidos.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/infuse/v1/pedidos/json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"infuse",
+						"v1",
+						"pedidos",
+						"json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "XML",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/wagner/work/desenv/TESTE/pedidos.xml"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/infuse/v1/pedidos/xml",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"infuse",
+						"v1",
+						"pedidos",
+						"xml"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Todos pedidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/infuse/v1/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"infuse",
+						"v1",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Por numero de pedido",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/infuse/v1/pedidos/100001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"infuse",
+						"v1",
+						"pedidos",
+						"100001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Por data de cadastro (YYYYMMDD)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/infuse/v1/pedidos/cadastro/20240408",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"infuse",
+						"v1",
+						"pedidos",
+						"cadastro",
+						"20240408"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
