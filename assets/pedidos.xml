@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pedidos>
+	<pedido>
+		<numero_pedido>100001</numero_pedido>
+		<data_cadastro>01/04/2024</data_cadastro>
+		<nome_produto>produto 1</nome_produto>
+		<valor_unitario>500</valor_unitario>
+		<quantidade>2</quantidade>
+		<id_cliente>1</id_cliente>
+	</pedido>
+
+	<pedido>
+		<numero_pedido>100005</numero_pedido>
+		<data_cadastro>02/04/2024</data_cadastro>
+		<nome_produto>produto 5</nome_produto>
+		<valor_unitario>700</valor_unitario>
+		<quantidade>20</quantidade>
+		<id_cliente>2</id_cliente>
+	</pedido>
+</pedidos>

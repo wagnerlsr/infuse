@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: saopaulo
+      MYSQL_DATABASE: pedidos
+      MYSQL_USER: infuse
+      MYSQL_PASSWORD: infuse
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./db/my.cnf:/etc/mysql/my.cnf
+
+volumes:
+  mysql_data:
